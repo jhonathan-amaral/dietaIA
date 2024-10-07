@@ -1,50 +1,76 @@
-# Welcome to your Expo app 👋
+## 🥗 NutriTrack (Sugestão) 🍎
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este projeto parece ser um aplicativo móvel desenvolvido com Expo e React Native, provavelmente focado em rastreamento nutricional, considerando a estrutura de pastas. 
 
-## Get started
+## 📱 Tecnologias Utilizadas:
 
-1. Install dependencies
+- React Native
+- Expo
+- TypeScript
 
-   ```bash
-   npm install
-   ```
+## 📂 Arquitetura do Projeto
 
-2. Start the app
+### 📁 app/
 
-   ```bash
-    npx expo start
-   ```
+Contém o código-fonte principal do aplicativo.
 
-In the output, you'll find options to open the app in a
+- `_layout.tsx`: Define o layout base da aplicação.
+- `index.tsx` 🚀: Ponto de entrada principal do aplicativo.
+- `create/`: Tela ou fluxo de criação, possivelmente de refeições ou alimentos.
+    - `index.tsx`:  Componente principal da tela de criação.
+- `nutrition/`: Seção relacionada a informações nutricionais.
+    - `index.tsx`: Componente principal da tela de nutrição.
+- `step/`:  Potencialmente um fluxo passo-a-passo, talvez para cadastro de alimentos ou refeições.
+    - `index.tsx`: Componente principal do fluxo passo-a-passo.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 📁 components/
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Componentes reutilizáveis da interface.
 
-## Get a fresh project
+- `header/`: Componente de cabeçalho.
+    - `header.tsx`: Componente principal do cabeçalho.
+- `input/`: Componentes de entrada de dados.
+    - `index.tsx`: Componente de input de texto.
+    - `select.tsx`: Componente de seleção (dropdown). 
 
-When you're ready, run:
+### 📁 services/
 
-```bash
-npm run reset-project
-```
+Lógica de comunicação com serviços externos.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- `api.ts`: Implementação da comunicação com a API. 
 
-## Learn more
+### 📁 store/
 
-To learn more about developing your project with Expo, look at the following resources:
+Gerenciamento de estado da aplicação.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- `data.ts`: Define a estrutura e funções relacionadas aos dados da aplicação. 
 
-## Join the community
+### 📁 assets/
 
-Join our community of developers creating universal apps.
+Imagens, fontes e outros recursos visuais.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `fonts/`: Pasta para arquivos de fontes.
+- `images/`: Pasta para arquivos de imagens.
+
+### 📄 Arquivos da raiz
+
+- `.expo/`: Configurações específicas do Expo.
+- `.git/`: Pasta do sistema de controle de versão Git.
+- `.vscode/`: Configurações específicas do Visual Studio Code.
+- `app.json`: Configurações principais da aplicação Expo.
+- `babel.config.js`: Configurações do Babel para transpilação do código. 
+- `constants/`: Pasta para armazenar constantes.
+- `expo-env.d.ts`: Definições de tipos para variáveis de ambiente.
+- `package-lock.json`, `package.json` 📦: Gerenciamento de dependências.
+- `README.md` 📄: Este arquivo! 👋
+- `tsconfig.json`: Configurações do compilador TypeScript.
+- `types/`: Definições de tipos adicionais.
+- `scripts/`: Pasta para scripts auxiliares.
+
+## Observações Adicionais
+
+- A pasta `nutrition/` sugere um foco em informações nutricionais.
+- A presença de um fluxo passo-a-passo (`step/`) pode indicar um processo guiado para o usuário.
+- Seria interessante ter mais informações sobre a API utilizada pelo aplicativo.
+
+Espero que esta análise seja útil! 😄 
